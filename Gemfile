@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :development, :test do
+  gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.11.0'
+end
 
-gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -24,7 +25,6 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
-    gem "rspec-rails",      ">= 2.0.0.beta"
     gem "autotest"
     gem "autotest-rails"
 end
